@@ -13,4 +13,5 @@ quick_map <-
     map_built <- leaflet() %>%
       addProviderTiles(providers$CartoDB.Positron) %>%
       addPolygons(data=sf_data, color=color_str, opacity=0.8)
+    return(map_built)
   }
